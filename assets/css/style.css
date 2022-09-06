@@ -1,0 +1,184 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    padding: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+.conteiner{
+    height: 100vh;
+    display: flex;
+}
+.logo{
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+.menu{
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu .menu-bar{
+    height: 3px;
+    background-color: #FFF;
+}
+.left-slide{
+    background-color: #fefdf9;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.profession{
+    color: rgb(0, 151, 206);
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+}
+.name{
+    font-size: 70px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.right-slide{
+    flex: 1;
+    background-color: rgb(0, 151, 206);
+    background-image: url(../images/rick.png);
+    background-size: cover;
+    background-position: center;
+}
+.buttons a{
+    display: inline-block;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    margin-right: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #FFF;
+    background-color: rgb(0, 151, 206);
+    box-shadow: 0px 0px 10px rgb(224 224 224);
+    border: 3px transparent solid;
+}
+.buttons .light{
+    background-color: #FFF;
+    color: rgb(0, 151, 206);
+}
+.buttons a:hover{
+    background-color: rgb(0, 170, 206);
+}
+.buttons .light:hover{
+    border: rgb(0, 151, 206) solid 3px;
+    background-color: #FFF;
+}
+footer{
+    position: fixed;
+    color: black;
+    padding: 20px;
+    left: 0;
+    right: 0px;
+    bottom: 0px;
+}
+footer a{
+    text-decoration: none;
+    color: rgb(0, 170, 206);
+}
+@media (min-width:970px) and (max-width:1150px){
+    footer{
+        font-size: 13px;
+    }
+    .buttons a{
+        padding: 20px;
+    }
+}
+@media (min-width:931px) and (max-width:970px){
+    footer{
+        font-size: 13px;
+    }
+    .buttons a{
+        padding: 15px;
+    }
+}
+@media (min-width:860px) and (max-width:930px){
+    .buttons{
+        display: flex;
+    }
+    .buttons a{
+        padding: 15px 2px;
+        font-size: 15px;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
+@media (min-width:660px) and (max-width:860px){
+    header{
+        position: initial;
+        background-color: #FFF;
+    }
+     .menu .menu-bar{
+        background-color: black;
+    }
+    footer{
+        position: initial;
+    }
+    .buttons{
+        display: flex;
+    }
+    .buttons a{
+        padding: 13px 2px;
+        font-size: 12px;
+    }
+}
+@media (min-width:320px) and (max-width:660px){
+    header{
+        position: initial;
+        background-color: #FFF;
+    }
+    .menu .menu-bar{
+        background-color: black;
+    }
+    footer{
+        position: initial;
+    }
+    .conteiner{
+        flex-direction: column;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .left-slide{
+        justify-content: center;
+        align-items: center;
+    }
+    .profession{
+        font-size: 15px;
+    }
+    .name{
+        font-size: 40px;
+        text-align: center;
+    }
+    .buttons a{
+        padding:15px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+}
